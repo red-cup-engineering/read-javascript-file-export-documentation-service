@@ -19,7 +19,8 @@
   "dependencies": {
     "@red-cup-engineering/computer-content-engineering-services-section": "workspace:*",
     "@red-cup-engineering/file-services": "workspace:*",
-    "@red-cup-engineering/jsonl-services-section": "workspace:*"
+    "@red-cup-engineering/jsonl-services-section": "workspace:*",
+    "@red-cup-engineering/javascript-node-services-section": "workspace:*"
   },
   "scripts": {
     "check": "node --check scripts/*.mjs",
