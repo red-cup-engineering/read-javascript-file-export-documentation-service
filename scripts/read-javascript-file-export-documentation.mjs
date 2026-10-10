@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { once } from "node:events";
 import { parseLines, serializeLines } from "@red-cup-engineering/jsonl-services-section";
-import { requireTextFileRead } from "@red-cup-engineering/file-services/require-text-file-read";
+import { requireTextFileRead } from "@red-cup-engineering/computer-file-engineering-services-section/require-text-file-read";
 import { jsdocOf, parseJavaScript, parseJsdoc } from "@red-cup-engineering/javascript-node-services-section/javascript-parser";
 
 function documentation(program, node) {
