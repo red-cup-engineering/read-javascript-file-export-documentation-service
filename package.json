@@ -36,5 +36,9 @@
   },
   "devDependencies": {
     "@red-cup-engineering/jsnode-package-services-section": "0.2.4"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
   }
 }
