@@ -18,7 +18,9 @@
   },
   "files": [
     "scripts",
-    "package.json"
+    "package.json",
+    "docs/API.md",
+    "examples/quickstart.test.mjs"
   ],
   "dependencies": {
     "@red-cup-engineering/computer-content-engineering-services-section": "0.1.0",
@@ -27,18 +29,17 @@
     "@red-cup-engineering/javascript-node-services-section": "0.3.2"
   },
   "scripts": {
-    "check": "check-package-syntax",
-    "test": "run-package-tests",
-    "pack:dry-run": "npm pack --dry-run --ignore-scripts"
+    "check": "node --check scripts/read-javascript-file-export-documentation.mjs && node --check scripts/javascript-export-description.mjs",
+    "test": "node --test test/*.test.mjs",
+    "pack:dry-run": "npm pack --dry-run --ignore-scripts",
+    "test:consumer": "node --test examples/quickstart.test.mjs"
   },
   "engines": {
     "node": ">=24"
   },
-  "devDependencies": {
-    "@red-cup-engineering/jsnode-package-services-section": "0.2.4"
-  },
   "funding": {
     "type": "individual",
     "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
-  }
+  },
+  "packageManager": "pnpm@11.19.0"
 }

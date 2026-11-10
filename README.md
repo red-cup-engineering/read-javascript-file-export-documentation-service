@@ -8,3 +8,12 @@
 <!-- 561-group-standards:badges:end -->
 
 Reads standard JSDoc attached to exported functions in one JavaScript text-file reading.
+
+## Quickstart
+
+Pass a `TextFileRead` with a path and the JavaScript source to
+`readJavascriptFileExportDocumentation`. The result lists documented exports
+with their signatures and tags. See the [runnable example](examples/quickstart.test.mjs)
+and [public API](docs/API.md).
+
+Run `pnpm install --frozen-lockfile`, then `npm test` and `npm run test:consumer`.
