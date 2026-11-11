@@ -1,7 +1,7 @@
 {
   "name": "@red-cup-engineering/read-javascript-file-export-documentation-service",
-  "version": "0.1.6",
-  "description": "Reads standard JSDoc attached to exported functions in one JavaScript text-file reading.",
+  "version": "0.2.0",
+  "description": "Reads source-bound JSDoc for exported JavaScript functions and named foreign reexports without executing the source.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/red-cup-engineering/read-javascript-file-export-documentation-service.git"
