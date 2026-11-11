@@ -1,14 +1,38 @@
 {
   "version": 1,
-  "basis": "Read standard JSDoc attached to exported functions in one JavaScript text-file reading.",
+  "basis": "Read standard JSDoc from JavaScript syntax and local bindings without executing source or inventing the kind and signature of a foreign export.",
   "cases": [
     {
       "id": "JSDOC-REEXPORT",
       "role": "source",
       "kind": "invariant",
-      "claim": "A documented re-export uses its public alias and retains the upstream callable signature.",
+      "claim": "A documented foreign re-export retains its public alias, authored annotations and import origin without inventing a callable signature.",
       "file": "test/read-javascript-file-export-documentation.test.mjs",
-      "test": "reads JSDoc attached to a re-export of an imported function"
+      "test": "reads authored re-export documentation without inventing the foreign binding's kind"
+    },
+    {
+      "id": "JSDOC-LOCAL-BINDING",
+      "role": "source",
+      "kind": "invariant",
+      "claim": "A local exported alias retains its callable declaration's JSDoc and actual parameter syntax.",
+      "file": "test/read-javascript-file-export-documentation.test.mjs",
+      "test": "local exports retain their declaration's documentation and real parameter syntax"
+    },
+    {
+      "id": "JSDOC-DEFAULT-EXPORT",
+      "role": "source",
+      "kind": "example",
+      "claim": "Default callable declarations, expressions and local aliases are documented under their public default name.",
+      "file": "test/read-javascript-file-export-documentation.test.mjs",
+      "test": "default callable declarations, expressions and local aliases are documented"
+    },
+    {
+      "id": "JSDOC-NONCALLABLE",
+      "role": "source",
+      "kind": "refusal",
+      "claim": "Non-callable locals, cyclic aliases and unresolved export-star statements do not become invented function records.",
+      "file": "test/read-javascript-file-export-documentation.test.mjs",
+      "test": "non-callable locals, cyclic aliases and export-star do not fabricate function records"
     },
     {
       "id": "JSDOC-INVALID-SOURCE",
@@ -23,6 +47,20 @@
       "role": "consumer",
       "kind": "example",
       "claim": "An installed caller can read the public name, description, parameter and return type of a documented function.",
+      "file": "examples/quickstart.test.mjs"
+    },
+    {
+      "id": "JSDOC-INSTALLED-SOURCE",
+      "role": "consumer",
+      "kind": "example",
+      "claim": "An installed reader extracts actual callable documentation from the installed upstream parser module.",
+      "file": "examples/quickstart.test.mjs"
+    },
+    {
+      "id": "JSDOC-EXPORT-BINDINGS",
+      "role": "consumer",
+      "kind": "invariant",
+      "claim": "An installed caller distinguishes local callable aliases and defaults from unresolved foreign bindings without executing supplied source.",
       "file": "examples/quickstart.test.mjs"
     }
   ]
