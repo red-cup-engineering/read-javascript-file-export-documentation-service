@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import { once } from "node:events";
-import { parseLines, serializeLines } from "@red-cup-engineering/jsonl-services-section";
+import { parseLines, serializeLines } from "@red-cup-engineering/jsonl-engineering-services-section";
 import { requireTextFileRead } from "@red-cup-engineering/computer-file-engineering-services-section/require-text-file-read";
-import { bindJavaScript, jsdocOf, parseJavaScript, parseJsdoc, walkJavaScript } from "@red-cup-engineering/javascript-node-services-section/javascript-parser";
+import { bindJavaScript, jsdocOf, parseJavaScript, parseJsdoc, walkJavaScript } from "@red-cup-engineering/javascript-node-engineering-services-section/javascript-parser";
 
 function documentation(block) {
   const parsed = block ? parseJsdoc(block.value) : { description: "", tags: [] };

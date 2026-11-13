@@ -26,8 +26,8 @@
     "@red-cup-engineering/javascript-parser-service": "^0.1.1",
     "@red-cup-engineering/computer-content-engineering-services-section": "0.1.0",
     "@red-cup-engineering/computer-file-engineering-services-section": "0.4.0",
-    "@red-cup-engineering/jsonl-services-section": "0.1.0",
-    "@red-cup-engineering/javascript-node-services-section": "0.3.2"
+    "@red-cup-engineering/jsonl-engineering-services-section": "0.1.0",
+    "@red-cup-engineering/javascript-node-engineering-services-section": "0.3.2"
   },
   "scripts": {
     "check": "node --check scripts/read-javascript-file-export-documentation.mjs && node --check scripts/javascript-export-description.mjs",

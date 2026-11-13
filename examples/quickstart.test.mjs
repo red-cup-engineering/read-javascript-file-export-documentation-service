@@ -25,7 +25,7 @@ test("JSDOC-QUICKSTART", () => {
 });
 
 test("JSDOC-INSTALLED-SOURCE", async () => {
-  const specifier = "@red-cup-engineering/javascript-node-services-section/javascript-parser";
+  const specifier = "@red-cup-engineering/javascript-node-engineering-services-section/javascript-parser";
   const text = await readFile(new URL(import.meta.resolve(specifier)), "utf8");
   const entries = readJavascriptFileExportDocumentation({ type: "TextFileRead", path: specifier, text });
   const parse = entries.find(entry => entry.name === "parseJavaScript");
