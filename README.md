@@ -15,8 +15,7 @@ the supplied module is never imported or executed.
 
 Pass a `TextFileRead` with a path and the JavaScript source to
 `readJavascriptFileExportDocumentation`. The result lists documented exports
-with their signatures and tags. See the [runnable example](examples/quickstart.test.mjs)
-and [public API](docs/API.md).
+with their signatures and tags. See the [runnable example](examples/quickstart.test.mjs).
 
 Run `pnpm install --frozen-lockfile`, then `npm test` and `npm run test:consumer`.
 

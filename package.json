@@ -19,7 +19,6 @@
   "files": [
     "scripts",
     "package.json",
-    "docs/API.md",
     "examples/quickstart.test.mjs"
   ],
   "dependencies": {

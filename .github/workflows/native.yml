@@ -28,6 +28,5 @@ jobs:
           archive=$(npm pack --silent --ignore-scripts --pack-destination "$consumer")
           cd "$consumer"
           npm install --ignore-scripts --no-audit --no-fund --registry=https://registry.561.group/ "./$archive"
-          test -f node_modules/@red-cup-engineering/read-javascript-file-export-documentation-service/docs/API.md
           cp node_modules/@red-cup-engineering/read-javascript-file-export-documentation-service/examples/quickstart.test.mjs quickstart.test.mjs
           node --test ./quickstart.test.mjs
