@@ -2,7 +2,7 @@
 import { once } from "node:events";
 import { parseLines, serializeLines } from "@red-cup-engineering/jsonl-engineering-services-section";
 import { requireTextFileRead } from "@red-cup-engineering/computer-file-engineering-services-section/require-text-file-read";
-import { bindJavaScript, jsdocOf, parseJavaScript, parseJsdoc, walkJavaScript } from "@red-cup-engineering/javascript-node-engineering-services-section/javascript-parser";
+import { bindJavaScript, jsdocOf, parseJavaScript, parseJsdoc, walkJavaScript } from "@red-cup-engineering/javascript-parser-service";
 
 function documentation(block) {
   const parsed = block ? parseJsdoc(block.value) : { description: "", tags: [] };
