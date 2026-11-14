@@ -62,3 +62,10 @@ entry-point verification and executed acceptance results.
 The installed examples also read the real upstream parser's source through its
 public package export. This checks the reader against its supplier's actual
 JavaScript module as well as the small introductory example.
+
+The parser is the existing `javascript-parser-service` package (owned within the
+JavaScriptNode repository), not the retired JavaScriptNode parser facade. The
+shipped quickstart is an explicit receiving obligation and reads that real
+installed parser's exports as well as authored source. Native source/archive
+checks do not certify the existing full frozen dependency lock or registry
+issuance; those receiving gates remain separate.
