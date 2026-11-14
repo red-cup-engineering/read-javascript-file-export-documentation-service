@@ -69,3 +69,8 @@ shipped quickstart is an explicit receiving obligation and reads that real
 installed parser's exports as well as authored source. Native source/archive
 checks do not certify the existing full frozen dependency lock or registry
 issuance; those receiving gates remain separate.
+
+
+## Current supplier receiving prerequisite
+
+This development manifest selects the genuine current parser, Content, File and JSONL sources used by the unchanged documentation reader. Original source tests and the existing three public quickstart cases qualify these selected source artifacts; the authored installed receiving profile remains unchanged. The selection does not claim issued-registry availability, reconcile transitive historical manifests, satisfy a frozen lock, or change upstream approval and activation gates.

@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/read-javascript-file-export-documentation-service",
-  "version": "0.2.1-dev.0",
+  "version": "0.2.1-dev.1",
   "description": "Reads source-bound JSDoc for exported JavaScript functions and named foreign reexports without executing the source.",
   "repository": {
     "type": "git",
@@ -22,10 +22,10 @@
     "examples/quickstart.test.mjs"
   ],
   "dependencies": {
-    "@red-cup-engineering/javascript-parser-service": "^0.1.1",
-    "@red-cup-engineering/computer-content-engineering-services-section": "0.1.0",
-    "@red-cup-engineering/computer-file-engineering-services-section": "0.4.0",
-    "@red-cup-engineering/jsonl-engineering-services-section": "0.1.0"
+    "@red-cup-engineering/javascript-parser-service": "0.2.0-dev.1",
+    "@red-cup-engineering/computer-content-engineering-services-section": "0.2.1-dev.1",
+    "@red-cup-engineering/computer-file-engineering-services-section": "0.8.7-dev.1",
+    "@red-cup-engineering/jsonl-engineering-services-section": "0.1.3-dev.0"
   },
   "scripts": {
     "check": "node --check scripts/read-javascript-file-export-documentation.mjs && node --check scripts/javascript-export-description.mjs",
